@@ -11,3 +11,17 @@ const countSheep = function(num) {
 }
 
 countSheep(3);
+
+
+//Array double
+
+
+function arrayDouble(arr) {
+  //base case
+  if (!arr.length) {
+    return [];
+  }
+  let first = arr[0];
+  return [first * 2, ...arrayDouble(arr.slice(1))]
+}
+console.log(arrayDouble([1,2,3]));
