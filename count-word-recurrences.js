@@ -3,8 +3,6 @@
 //Input: "Hello there, how are you? Can you tell me how to get to the nearest Starbucks?"
 //Output: Hello = 1, there = 1, how = 2, are = 1, you = 2
 
-//Solving it recursively
-
 const wordCount = function(str) {
   //First split the words and place them in an array
 
@@ -17,7 +15,6 @@ const wordCount = function(str) {
       recurArr.push(strArr[i])
     }
   }
-
   //Loop through the new array and use a counter to count how many instances
   let counter = 1;
   for(let i = 0; i < recurArr.length; i++) {
